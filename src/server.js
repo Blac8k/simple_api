@@ -1,3 +1,10 @@
-hello this is the second commit
+import express from 'express';
 
-third commit
+const app = new express();
+const port = 3000;
+
+app.get('/', (req,res) =>{
+    res.send("hello you");
+});
+
+app.listen(port);
